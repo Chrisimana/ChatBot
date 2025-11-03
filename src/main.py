@@ -1,8 +1,8 @@
 import tkinter as tk
-from chatbot_core import ChatbotCore
-from chat_manager import ChatManager
-from gui_interface import ChatGUI
-from config import Config
+from src.chatbot_core import ChatbotCore
+from src.chat_manager import ChatManager
+from src.gui_interface import ChatGUI
+from src.config import Config
 
 class SuperChatbotApp:
     def __init__(self):

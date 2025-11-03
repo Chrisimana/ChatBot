@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import scrolledtext, ttk, messagebox, filedialog
 import tkinter.font as tkFont
-from config import Config
+from src.config import Config
 
 class ChatGUI:
     def __init__(self, root, chat_core, chat_manager):

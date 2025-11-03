@@ -1,7 +1,7 @@
 import random
 import re
 from datetime import datetime
-from features import FeatureManager
+from src.features import FeatureManager
 
 class ChatbotCore:
 
