@@ -21,10 +21,7 @@
 - [Penggunaan](#-penggunaan)
 - [Dokumentasi](#-dokumentasi)
 - [Struktur Project](#-struktur-project)
-- [Konfigurasi](#-konfigurasi)
-- [API Reference](#-api-reference)
 - [Contoh Penggunaan](#-contoh-penggunaan)
-- [Pengembangan](#-pengembangan)
 - [FAQ](#-faq)
 
 ## 🚀 Gambaran Umum
@@ -175,25 +172,6 @@ graph TD
     I --> J[Display Response]
 ```
 
-## 🗂️ Struktur Project
-
-```
-super-python-chatbot/
-│
-├── 📁 chat_history/           # Folder penyimpanan chat
-│   ├── chat_20231201_143022.json
-│   └── chat_20231201_150015.json
-│
-├── ⚙️ main.py                 # Entry point aplikasi
-├── 🤖 chatbot_core.py         # Logic utama chatbot
-├── 🎨 gui_interface.py        # GUI implementation
-├── 💾 chat_manager.py         # Manajemen data chat
-├── 🛠️ features.py            # Fitur tambahan
-├── ⚙️ config.py              # Konfigurasi aplikasi
-├── 📋 requirements.txt        # Dependencies
-└── 📖 README.md              # Dokumentasi ini
-```
-
 ### File Descriptions
 
 | File | Description |
@@ -205,76 +183,6 @@ super-python-chatbot/
 | `features.py` | Fitur tambahan (kalkulator, joke, dll) |
 | `config.py` | Konfigurasi warna, path, dan pengaturan |
 
-## ⚙️ Konfigurasi
-
-### Customization
-
-Edit `config.py` untuk menyesuaikan:
-
-```python
-class Config:
-    # GUI Settings
-    GUI_TITLE = "Custom Chatbot Name"
-    GUI_WIDTH = 900
-    GUI_HEIGHT = 800
-    
-    # Color Scheme
-    COLORS = {
-        'bg_dark': '#1a1a1a',
-        'accent': '#ff6b6b',  # Change accent color
-        'user_msg': '#4ecdc4',
-    }
-    
-    # Features
-    EMOJIS_ENABLED = True
-    AUTO_SAVE = True
-```
-
-### Theme Customization
-
-```python
-# Light Theme Example
-COLORS = {
-    'bg_dark': '#ffffff',
-    'bg_light': '#f5f5f5',
-    'text_light': '#333333',
-    'accent': '#2196F3'
-}
-```
-
-## 🔌 API Reference
-
-### ChatbotCore Class
-
-```python
-class ChatbotCore:
-    def process_message(self, message: str, user_name: str = "Pengguna") -> str:
-        """
-        Memproses pesan pengguna dan mengembalikan respons
-        
-        Args:
-            message (str): Pesan dari pengguna
-            user_name (str): Nama pengguna
-            
-        Returns:
-            str: Respons chatbot
-        """
-```
-
-### ChatManager Class
-
-```python
-class ChatManager:
-    def save_message(self, user_message: str, bot_response: str, user_name: str):
-        """
-        Menyimpan pesan ke history
-        
-        Args:
-            user_message (str): Pesan pengguna
-            bot_response (str): Respons chatbot
-            user_name (str): Nama pengguna
-        """
-```
 
 ## 💡 Contoh Penggunaan
 
@@ -308,43 +216,6 @@ Bot: 🌤️ Info Cuaca Hari Ini:
      • Tips: Gunakan sunscreen! ☀️
 ```
 
-## 🛠️ Pengembangan
-
-### Menambah Fitur Baru
-
-1. **Tambahkan di `features.py`**:
-```python
-def new_feature(self, message):
-    if 'keyword' in message:
-        return "Respons untuk fitur baru! 🎉"
-```
-
-2. **Integrasikan di `chatbot_core.py`**:
-```python
-elif any(word in message for word in ['keyword']):
-    return self.feature_manager.new_feature(message)
-```
-
-### Custom Responses
-
-```python
-# Di chatbot_core.py
-custom_responses = {
-    'keyword': [
-        "Respons 1! ✨",
-        "Respons 2! 🎯", 
-        "Respons 3! 🚀"
-    ]
-}
-```
-
-### Menambah Keyboard Shortcut
-
-```python
-# Di gui_interface.py
-self.root.bind('<Ctrl-Key>', lambda e: self.function_name())
-```
-
 ## ❓ FAQ
 
 ### Q: Apakah perlu install library tambahan?
@@ -365,19 +236,10 @@ self.root.bind('<Ctrl-Key>', lambda e: self.function_name())
 ### Q: Bisakah diintegrasikan dengan AI seperti ChatGPT?
 **A:** Ya! Structure sudah siap untuk diintegrasikan dengan AI API.
 
-## 🏆 Credits
-
-Dibuat dengan ❤️ menggunakan:
-- Python 3
-- Tkinter GUI
-- Standard Library
-
 ---
 
 <div align="center">
 
 **⭐ Jangan lupa beri bintang jika project ini membantu! ⭐**
-
-[Kembali ke Atas](#chatbot)
 
 </div>
