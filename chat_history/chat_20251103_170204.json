@@ -1,0 +1,293 @@
+{
+  "start_time": "2025-11-03 17:02:04",
+  "messages": [
+    {
+      "timestamp": "2025-11-03 17:02:34",
+      "user": "Pengguna",
+      "user_message": "hitung",
+      "bot_response": "Hello Pengguna! Bagaimana harimu?"
+    },
+    {
+      "timestamp": "2025-11-03 17:02:45",
+      "user": "Pengguna",
+      "user_message": "hitung 1+1",
+      "bot_response": "Selamat datang kembali, Pengguna! Bagaimana kabarmu hari ini?"
+    },
+    {
+      "timestamp": "2025-11-03 17:02:55",
+      "user": "Pengguna",
+      "user_message": "help",
+      "bot_response": "Hai Pengguna! Senang bertemu denganmu!"
+    },
+    {
+      "timestamp": "2025-11-03 17:03:40",
+      "user": "Pengguna",
+      "user_message": "sedih",
+      "bot_response": "Aku di sini untuk mendengarmu. Ingin cerita lebih banyak? 🤗"
+    },
+    {
+      "timestamp": "2025-11-03 17:03:51",
+      "user": "Pengguna",
+      "user_message": "cuaca",
+      "bot_response": "🌧️ **Info Cuaca Hari Ini:**\n• Kondisi: hujan ringan\n• Suhu: 31°C\n• Tips: Bawa payung! 🌧️"
+    },
+    {
+      "timestamp": "2025-11-03 17:03:54",
+      "user": "Pengguna",
+      "user_message": "hitunh",
+      "bot_response": "Selamat datang kembali, Pengguna! Bagaimana kabarmu hari ini?"
+    },
+    {
+      "timestamp": "2025-11-03 17:03:58",
+      "user": "Pengguna",
+      "user_message": "hitung",
+      "bot_response": "Halo Pengguna! Ada yang bisa saya bantu?"
+    },
+    {
+      "timestamp": "2025-11-03 17:04:03",
+      "user": "Pengguna",
+      "user_message": "jam berapa",
+      "bot_response": "Yo Pengguna! Siap beraksi."
+    },
+    {
+      "timestamp": "2025-11-03 17:04:09",
+      "user": "Pengguna",
+      "user_message": "waktu",
+      "bot_response": "🕐 Sekarang jam **17:04:09**\n📅 Tanggal **Monday, 03 November 2025**"
+    },
+    {
+      "timestamp": "2025-11-03 17:04:12",
+      "user": "Pengguna",
+      "user_message": "jam berapa",
+      "bot_response": "Apa kabar, Pengguna? Ada yang bisa saya carikan?"
+    },
+    {
+      "timestamp": "2025-11-03 17:04:15",
+      "user": "Pengguna",
+      "user_message": "sekarang jam",
+      "bot_response": "🕐 Sekarang jam **17:04:15**\n📅 Tanggal **Monday, 03 November 2025**"
+    },
+    {
+      "timestamp": "2025-11-03 17:04:22",
+      "user": "Pengguna",
+      "user_message": "help",
+      "bot_response": "Halo Pengguna! Ada yang bisa saya bantu?"
+    },
+    {
+      "timestamp": "2025-11-03 17:04:25",
+      "user": "Pengguna",
+      "user_message": "bantuan",
+      "bot_response": "\n🤖 **SUPER CHATBOT HELP** 🤖\n\n**Fitur Utama:**\n• 💬 Percakapan sehari-hari\n• 🧮 Kalkulator (contoh: 'hitung 2+2')\n• ⏰ Waktu dan tanggal\n• 😄 Cerita lucu\n• 💪 Motivasi dan quotes\n• 🌤️ Info cuaca (simulasi)\n\n**Perintah Khusus:**\n• /help - Tampilkan bantuan ini\n• /clear - Bersihkan chat\n• /time - Tampilkan waktu\n• /joke - Cerita lucu\n• /quote - Motivasi\n\n**Cara penggunaan:**\nTulis pesan biasa atau gunakan perintah di atas!\n        "
+    },
+    {
+      "timestamp": "2025-11-03 17:04:36",
+      "user": "Pengguna",
+      "user_message": "bisa apa",
+      "bot_response": "Apa kabar, Pengguna? Ada yang bisa saya carikan?"
+    },
+    {
+      "timestamp": "2025-11-03 17:04:39",
+      "user": "Pengguna",
+      "user_message": "commands",
+      "bot_response": "\n🤖 **SUPER CHATBOT HELP** 🤖\n\n**Fitur Utama:**\n• 💬 Percakapan sehari-hari\n• 🧮 Kalkulator (contoh: 'hitung 2+2')\n• ⏰ Waktu dan tanggal\n• 😄 Cerita lucu\n• 💪 Motivasi dan quotes\n• 🌤️ Info cuaca (simulasi)\n\n**Perintah Khusus:**\n• /help - Tampilkan bantuan ini\n• /clear - Bersihkan chat\n• /time - Tampilkan waktu\n• /joke - Cerita lucu\n• /quote - Motivasi\n\n**Cara penggunaan:**\nTulis pesan biasa atau gunakan perintah di atas!\n        "
+    },
+    {
+      "timestamp": "2025-11-03 17:04:46",
+      "user": "Pengguna",
+      "user_message": "kalkulator",
+      "bot_response": "Saya bisa membantu menghitung! Coba: 'hitung 15 + 27' atau 'berapa 100 / 4' 🧮"
+    },
+    {
+      "timestamp": "2025-11-03 17:04:57",
+      "user": "Pengguna",
+      "user_message": "15 + 27",
+      "bot_response": "Pembicaraan yang seru! Lanjutkan! 🚀"
+    },
+    {
+      "timestamp": "2025-11-03 17:05:04",
+      "user": "Pengguna",
+      "user_message": "hitung 15+27",
+      "bot_response": "Hai Pengguna! Senang bertemu denganmu!"
+    },
+    {
+      "timestamp": "2025-11-03 17:05:11",
+      "user": "Pengguna",
+      "user_message": "hitung 15 + 12",
+      "bot_response": "Apa kabar, Pengguna? Ada yang bisa saya carikan?"
+    },
+    {
+      "timestamp": "2025-11-03 17:05:23",
+      "user": "Pengguna",
+      "user_message": "hitung 1 - 2 berapa?",
+      "bot_response": "Selamat datang kembali, Pengguna! Bagaimana kabarmu hari ini?"
+    },
+    {
+      "timestamp": "2025-11-03 17:05:29",
+      "user": "Pengguna",
+      "user_message": "tanggal",
+      "bot_response": "🕐 Sekarang jam **17:05:29**\n📅 Tanggal **Monday, 03 November 2025**"
+    },
+    {
+      "timestamp": "2025-11-03 17:05:36",
+      "user": "Pengguna",
+      "user_message": "cuaca",
+      "bot_response": "⛅ **Info Cuaca Hari Ini:**\n• Kondisi: mendung\n• Suhu: 34°C\n• Tips: Hari yang nyaman! ⛅"
+    },
+    {
+      "timestamp": "2025-11-03 17:05:42",
+      "user": "Pengguna",
+      "user_message": "hujan",
+      "bot_response": "⛅ **Info Cuaca Hari Ini:**\n• Kondisi: mendung\n• Suhu: 33°C\n• Tips: Hari yang nyaman! ⛅"
+    },
+    {
+      "timestamp": "2025-11-03 17:05:50",
+      "user": "Pengguna",
+      "user_message": "joke",
+      "bot_response": "Kenapa komputer tidak dingin? Karena Windows selalu terbuka! ❄️"
+    },
+    {
+      "timestamp": "2025-11-03 17:05:56",
+      "user": "Pengguna",
+      "user_message": "cerita lucu",
+      "bot_response": "Kenapa komputer tidak dingin? Karena Windows selalu terbuka! ❄️"
+    },
+    {
+      "timestamp": "2025-11-03 17:06:04",
+      "user": "Pengguna",
+      "user_message": "humor",
+      "bot_response": "Kenapa komputer tidak dingin? Karena Windows selalu terbuka! ❄️"
+    },
+    {
+      "timestamp": "2025-11-03 17:06:07",
+      "user": "Pengguna",
+      "user_message": "joke",
+      "bot_response": "Apa yang dikatakan Python kepada programmer? 'You complete me!' 💕"
+    },
+    {
+      "timestamp": "2025-11-03 17:06:10",
+      "user": "Pengguna",
+      "user_message": "lucu",
+      "bot_response": "Mengapa developer tidak suka alam? Terlalu banyak bug! 🐛"
+    },
+    {
+      "timestamp": "2025-11-03 17:06:15",
+      "user": "Pengguna",
+      "user_message": "cerita lucu",
+      "bot_response": "Apa bahasa pemrograman favorit hantu? Boo-lang! 👻"
+    },
+    {
+      "timestamp": "2025-11-03 17:06:51",
+      "user": "Pengguna",
+      "user_message": "python",
+      "bot_response": "Yo Pengguna! Siap beraksi."
+    },
+    {
+      "timestamp": "2025-11-03 17:06:57",
+      "user": "Pengguna",
+      "user_message": "kode",
+      "bot_response": "Python + Tkinter = GUI yang keren! Itu yang membuat saya bisa berdialog seperti ini! ✨"
+    },
+    {
+      "timestamp": "2025-11-03 17:06:59",
+      "user": "Pengguna",
+      "user_message": "kode",
+      "bot_response": "Saya dibuat dengan Python! Bahasa yang powerful dan mudah dipahami! 💻"
+    },
+    {
+      "timestamp": "2025-11-03 17:07:00",
+      "user": "Pengguna",
+      "user_message": "kode",
+      "bot_response": "Python adalah bahasa pemrograman yang amazing! 🐍"
+    },
+    {
+      "timestamp": "2025-11-03 17:07:11",
+      "user": "Pengguna",
+      "user_message": "semangat",
+      "bot_response": "💫 **Motivasi Hari Ini:**\nCode is like humor. When you have to explain it, it's bad. - Cory House 💻"
+    },
+    {
+      "timestamp": "2025-11-03 17:07:19",
+      "user": "Pengguna",
+      "user_message": "motivasi",
+      "bot_response": "💫 **Motivasi Hari Ini:**\nExperience is the name everyone gives to their mistakes. - Oscar Wilde 🌟"
+    },
+    {
+      "timestamp": "2025-11-03 17:07:25",
+      "user": "Pengguna",
+      "user_message": "quote",
+      "bot_response": "💫 **Motivasi Hari Ini:**\nFirst, solve the problem. Then, write the code. - John Johnson 🎯"
+    },
+    {
+      "timestamp": "2025-11-03 17:07:41",
+      "user": "Pengguna",
+      "user_message": "hahahah",
+      "bot_response": "Terima kasih sudah berbagi! Ada hal lain yang ingin kamu bicarakan? 🌟"
+    },
+    {
+      "timestamp": "2025-11-03 17:07:44",
+      "user": "Pengguna",
+      "user_message": "ap",
+      "bot_response": "Apa kabar, Pengguna? Ada yang bisa saya carikan?"
+    },
+    {
+      "timestamp": "2025-11-03 17:07:48",
+      "user": "Pengguna",
+      "user_message": ".................................",
+      "bot_response": "Menarik sekali! 😊 Bisa cerita lebih banyak?"
+    },
+    {
+      "timestamp": "2025-11-03 17:08:07",
+      "user": "Pengguna",
+      "user_message": "sedih",
+      "bot_response": "Wah, jangan sedih ya! Semua masalah pasti ada solusinya! 🌈"
+    },
+    {
+      "timestamp": "2025-11-03 17:08:09",
+      "user": "Pengguna",
+      "user_message": "marah",
+      "bot_response": "Aku di sini untuk mendengarmu. Ingin cerita lebih banyak? 🤗"
+    },
+    {
+      "timestamp": "2025-11-03 17:08:12",
+      "user": "Pengguna",
+      "user_message": "kesal",
+      "bot_response": "Hey, everything will be okay! Kamu kuat! 💪"
+    },
+    {
+      "timestamp": "2025-11-03 17:08:15",
+      "user": "Pengguna",
+      "user_message": "sedih",
+      "bot_response": "Aku di sini untuk mendengarmu. Ingin cerita lebih banyak? 🤗"
+    },
+    {
+      "timestamp": "2025-11-03 17:08:34",
+      "user": "Pengguna",
+      "user_message": "senang",
+      "bot_response": "Yes! Spread the positive vibes! 🥳"
+    },
+    {
+      "timestamp": "2025-11-03 17:11:03",
+      "user": "Pengguna",
+      "user_message": "halo",
+      "bot_response": "Halo Pengguna! Ada yang bisa saya bantu?"
+    },
+    {
+      "timestamp": "2025-11-03 17:12:10",
+      "user": "Pengguna",
+      "user_message": "help",
+      "bot_response": "Senang mendengarmu, Pengguna! Aku siap membantumu."
+    },
+    {
+      "timestamp": "2025-11-03 17:12:13",
+      "user": "Pengguna",
+      "user_message": "help",
+      "bot_response": "Senang mendengarmu, Pengguna! Aku siap membantumu."
+    },
+    {
+      "timestamp": "2025-11-03 17:12:15",
+      "user": "Pengguna",
+      "user_message": "bantuan",
+      "bot_response": "\n🤖 **SUPER CHATBOT HELP** 🤖\n\n**Fitur Utama:**\n• 💬 Percakapan sehari-hari\n• 🧮 Kalkulator (contoh: 'hitung 2+2')\n• ⏰ Waktu dan tanggal\n• 😄 Cerita lucu\n• 💪 Motivasi dan quotes\n• 🌤️ Info cuaca (simulasi)\n\n**Perintah Khusus:**\n• /help - Tampilkan bantuan ini\n• /clear - Bersihkan chat\n• /time - Tampilkan waktu\n• /joke - Cerita lucu\n• /quote - Motivasi\n\n**Cara penggunaan:**\nTulis pesan biasa atau gunakan perintah di atas!\n        "
+    }
+  ]
+}
