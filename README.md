@@ -9,7 +9,7 @@
 
 **Chatbot canggih dengan GUI modern yang dibangun menggunakan Python dan Tkinter**
 
-[Fitur](#-fitur) • [Instalasi](#-instalasi) • [Penggunaan](#-penggunaan) • [Dokumentasi](#-dokumentasi) • [Struktur Project](#-struktur-project)
+[Fitur](#-fitur) • [Instalasi](#-instalasi) • [Penggunaan](#-penggunaan) • [Dokumentasi](#-dokumentasi)
 
 </div>
 
@@ -20,7 +20,6 @@
 - [Instalasi](#-instalasi)
 - [Penggunaan](#-penggunaan)
 - [Dokumentasi](#-dokumentasi)
-- [Struktur Project](#-struktur-project)
 - [Contoh Penggunaan](#-contoh-penggunaan)
 - [FAQ](#-faq)
 

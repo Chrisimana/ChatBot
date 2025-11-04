@@ -1,2 +1,0 @@
-# Chatbot Requirements
-# No additional packages needed - uses only standard library
