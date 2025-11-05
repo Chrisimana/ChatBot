@@ -146,17 +146,7 @@ python main.py
 
 ## 📚 Dokumentasi
 
-### Architecture Overview
-
-```
-Chatbot
-├── Presentation Layer (GUI)
-├── Business Logic Layer (Chatbot Core)
-├── Data Access Layer (Chat Manager)
-└── Configuration Layer (Config)
-```
-
-### Workflow
+### Workflow Diagram
 
 ```mermaid
 graph TD
