@@ -9,8 +9,8 @@ class ChatManager:
         Config.ensure_directory()
         self.current_chat_file = None
     
+    # Memulai chat baru
     def start_new_chat(self):
-        """Memulai chat baru"""
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         self.current_chat_file = os.path.join(
             Config.CHAT_HISTORY_DIR, 
@@ -27,7 +27,6 @@ class ChatManager:
     
     # Menyimpan pesan ke history
     def save_message(self, user_message, bot_response, user_name="Pengguna"):
-        """Menyimpan pesan ke history"""
         if not self.current_chat_file:
             self.start_new_chat()
             
@@ -43,29 +42,27 @@ class ChatManager:
         chat_data['messages'].append(message_entry)
         self._save_chat(chat_data)
     
-    # Memuat data chat dari file
+    # Memuat data chat
     def _load_chat(self):
-        """Memuat data chat"""
         try:
             with open(self.current_chat_file, 'r', encoding='utf-8') as f:
                 return json.load(f)
         except:
             return {'messages': []}
     
-    # Menyimpan data chat ke file
+    # Menyimpan data chat
     def _save_chat(self, chat_data):
-        """Menyimpan data chat"""
         with open(self.current_chat_file, 'w', encoding='utf-8') as f:
             json.dump(chat_data, f, indent=2, ensure_ascii=False)
     
+    # Mendapatkan history chat saat ini
     def get_chat_history(self):
-        """Mendapatkan history chat saat ini"""
         if not self.current_chat_file:
             return []
         return self._load_chat().get('messages', [])
     
+    # Export chat ke file
     def export_chat(self, format_type='txt'):
-        """Export chat ke file"""
         if not self.current_chat_file:
             return None
             
@@ -84,8 +81,8 @@ class ChatManager:
         
         return export_filename
     
+    # Mendapatkan daftar semua chat yang tersimpan
     def list_all_chats(self):
-        """Mendapatkan daftar semua chat yang tersimpan"""
         chat_files = []
         for file in os.listdir(Config.CHAT_HISTORY_DIR):
             if file.endswith('.json'):

@@ -3,6 +3,7 @@ import re
 from datetime import datetime
 import math
 
+# Manajemen fitur chatbot
 class FeatureManager:
     def __init__(self):
         self.jokes = [
@@ -21,8 +22,8 @@ class FeatureManager:
             "Don't comment bad code - rewrite it. - Brian Kernighan ✨"
         ]
     
+    # Cek dan jalankan perintah khusus
     def check_special_commands(self, message):
-        """Cek perintah khusus"""
         if message == '/clear':
             return "CLEAR_CHAT"
         elif message == '/help':
@@ -35,8 +36,8 @@ class FeatureManager:
             return self.get_motivational_quote()
         return None
     
+    # Menampilkan bantuan
     def show_help(self):
-        """Menampilkan bantuan"""
         help_text = """
 🤖 **CHATBOT HELP** 🤖
 
@@ -60,8 +61,8 @@ Tulis pesan biasa atau gunakan perintah di atas!
         """
         return help_text
     
+    # Kalkulator sederhana
     def calculate_expression(self, message):
-        """Kalkulator sederhana"""
         try:
             # Ekstrak ekspresi matematika
             numbers = re.findall(r'\d+\.?\d*', message)
@@ -93,15 +94,15 @@ Tulis pesan biasa atau gunakan perintah di atas!
         
         return "Saya bisa membantu menghitung! Coba: 'hitung 15 + 27' atau 'berapa 100 / 4' 🧮"
     
+    # Mendapatkan waktu saat ini
     def get_current_time(self):
-        """Mendapatkan waktu saat ini"""
         now = datetime.now()
         time_str = now.strftime("%H:%M:%S")
         date_str = now.strftime("%A, %d %B %Y")
         return f"🕐 Sekarang jam **{time_str}**\n📅 Tanggal **{date_str}**"
     
+    # Info cuaca simulasi
     def get_weather_info(self):
-        """Info cuaca (simulasi)"""
         weather_conditions = ["cerah", "mendung", "hujan ringan", "hujan lebat", "berawan"]
         temperatures = random.randint(22, 35)
         condition = random.choice(weather_conditions)
@@ -110,10 +111,10 @@ Tulis pesan biasa atau gunakan perintah di atas!
         
         return f"{emoji} **Info Cuaca Hari Ini:**\n• Kondisi: {condition}\n• Suhu: {temperatures}°C\n• Tips: {'Gunakan sunscreen!' if condition == 'cerah' else 'Bawa payung!' if 'hujan' in condition else 'Hari yang nyaman!'} {emoji}"
     
+    # Menceritakan joke
     def tell_joke(self):
-        """Menceritakan joke"""
         return random.choice(self.jokes)
     
+    # Mendapatkan quote motivasi
     def get_motivational_quote(self):
-        """Mendapatkan quote motivasi"""
         return f"💫 **Motivasi Hari Ini:**\n{random.choice(self.quotes)}"

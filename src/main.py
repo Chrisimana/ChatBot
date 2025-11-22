@@ -16,8 +16,8 @@ class SuperChatbotApp:
         # Initialize GUI
         self.gui = ChatGUI(self.root, self.chatbot, self.chat_manager)
         
+    # Menjalankan aplikasi
     def run(self):
-        """Menjalankan aplikasi"""
         try:
             self.root.mainloop()
         except KeyboardInterrupt:
@@ -26,8 +26,8 @@ class SuperChatbotApp:
             print(f"Error: {e}")
 
 if __name__ == "__main__":
-    print("🚀 Memulai Chatbot...")
-    print("📁 History chat disimpan di folder:", Config.CHAT_HISTORY_DIR)
+    print(" Memulai Chatbot...")
+    print("History chat disimpan di folder:", Config.CHAT_HISTORY_DIR)
     
     app = SuperChatbotApp()
     app.run()

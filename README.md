@@ -4,12 +4,9 @@
 
 ![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-active-success)
 ![GUI](https://img.shields.io/badge/GUI-Tkinter-orange)
 
 **Chatbot canggih dengan GUI modern yang dibangun menggunakan Python dan Tkinter**
-
-[Fitur](#-fitur) • [Instalasi](#-instalasi) • [Penggunaan](#-penggunaan) • [Dokumentasi](#-dokumentasi)
 
 </div>
 

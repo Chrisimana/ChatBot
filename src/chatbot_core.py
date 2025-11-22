@@ -10,8 +10,8 @@ class ChatbotCore:
         self.user_name = "Pengguna"
         self.conversation_context = {}
         
+    # Memproses pesan dan mengembalikan respons
     def process_message(self, message, user_name="Pengguna"):
-        """Memproses pesan dan mengembalikan respons"""
         self.user_name = user_name
         message_lower = message.lower()
         
@@ -28,8 +28,8 @@ class ChatbotCore:
         
         return response
     
+    # Generate respons berdasarkan konten pesan
     def _generate_response(self, message):
-        """Generate respons berdasarkan konten pesan"""
         
         # Greetings
         if any(word in message.lower() for word in [
@@ -162,8 +162,8 @@ class ChatbotCore:
         else:
             return self._get_intelligent_response(message)
     
+    # Respons AI sederhana berdasarkan pola
     def _get_intelligent_response(self, message):
-        """Respons AI sederhana berdasarkan pola"""
         if '?' in message:
             return random.choice([
                 "Pertanyaan yang menarik! Bisa kamu jelaskan lebih detail?",
@@ -194,12 +194,12 @@ class ChatbotCore:
                 "Pembicaraan yang seru! Lanjutkan! 🚀"
             ])
     
+    # Update konteks percakapan
     def _update_context(self, message, response):
-        """Update konteks percakapan"""
         self.conversation_context['last_message'] = message
         self.conversation_context['last_response'] = response
         self.conversation_context['timestamp'] = datetime.now()
     
+    # Mendapatkan ringkasan percakapan
     def get_conversation_summary(self):
-        """Mendapatkan ringkasan percakapan"""
         return self.conversation_context

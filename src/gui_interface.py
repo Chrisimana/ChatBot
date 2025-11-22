@@ -11,9 +11,9 @@ class ChatGUI:
         
         self.setup_gui()
         self.setup_bindings()
-        
+
+    # Setup GUI components 
     def setup_gui(self):
-        """Setup GUI components"""
         self.root.title(Config.GUI_TITLE)
         self.root.geometry(f"{Config.GUI_WIDTH}x{Config.GUI_HEIGHT}")
         self.root.configure(bg=Config.COLORS['bg_dark'])
@@ -27,8 +27,8 @@ class ChatGUI:
         self.create_input_area()
         self.create_sidebar()
         
+    # Setup custom styles
     def setup_styles(self):
-        """Setup custom styles untuk widgets"""
         self.style = ttk.Style()
         self.style.theme_use('clam')
         
@@ -39,8 +39,8 @@ class ChatGUI:
                            foreground=Config.COLORS['text_light'],
                            font=Config.GUI_FONT)
         
+    # Membuat header
     def create_header(self):
-        """Membuat header"""
         header_frame = ttk.Frame(self.root, style='TFrame')
         header_frame.pack(fill='x', padx=10, pady=10)
         
@@ -59,9 +59,9 @@ class ChatGUI:
                                    bg=Config.COLORS['bg_dark'],
                                    fg="#4CAF50")
         self.status_label.pack(side=tk.RIGHT)
-        
+
+    # membuat area chat  
     def create_chat_area(self):
-        """Membuat area chat"""
         chat_frame = ttk.Frame(self.root, style='TFrame')
         chat_frame.pack(fill='both', expand=True, padx=10, pady=5)
         
@@ -109,8 +109,8 @@ class ChatGUI:
                                    foreground='#FF9800',
                                    font=("Arial", 9, "italic"))
     
+    # Membuat area input
     def create_input_area(self):
-        """Membuat area input"""
         input_frame = ttk.Frame(self.root, style='TFrame')
         input_frame.pack(fill='x', padx=10, pady=10)
         
@@ -147,8 +147,8 @@ class ChatGUI:
                                       command=self.export_chat)
         self.export_button.pack(pady=2)
     
+    # membuat sidebar
     def create_sidebar(self):
-        """Membuat sidebar untuk info tambahan"""
         self.sidebar = ttk.Frame(self.root, style='TFrame', width=200)
         self.sidebar.pack(side=tk.RIGHT, fill='y', padx=(0, 10), pady=10)
         
@@ -171,9 +171,9 @@ class ChatGUI:
         self.stats_text.config(state=tk.DISABLED)
         
         self.update_stats()
-    
+
+    # Setup keyboard bindings
     def setup_bindings(self):
-        """Setup keyboard bindings"""
         self.input_field.bind('<Return>', self.on_enter_pressed)
         self.input_field.bind('<Shift-Return>', self.on_shift_enter)
         self.root.bind('<Control-n>', lambda e: self.clear_chat())
@@ -182,17 +182,17 @@ class ChatGUI:
         # Focus on input field
         self.input_field.focus_set()
     
+    # Handle Enter key press
     def on_enter_pressed(self, event):
-        """Handle Enter key press"""
         self.send_message()
         return 'break'  # Prevent default behavior
     
+    # Allow new line with Shift+Enter
     def on_shift_enter(self, event):
-        """Allow new line with Shift+Enter"""
         return  # Allow default behavior
     
+    # Mengirim pesan
     def send_message(self):
-        """Mengirim pesan"""
         message = self.input_field.get('1.0', tk.END).strip()
         
         if message:
@@ -217,9 +217,8 @@ class ChatGUI:
                 
                 # Update stats
                 self.update_stats()
-    
+    # Menampilkan pesan di chat area
     def display_message(self, message, sender):
-        """Menampilkan pesan di chat area"""
         self.chat_display.config(state=tk.NORMAL)
         
         # Tambahkan timestamp
@@ -235,8 +234,8 @@ class ChatGUI:
         self.chat_display.config(state=tk.DISABLED)
         self.chat_display.see(tk.END)
     
+    # Membersihkan chat
     def clear_chat(self):
-        """Membersihkan chat"""
         self.chat_display.config(state=tk.NORMAL)
         self.chat_display.delete('1.0', tk.END)
         self.chat_display.config(state=tk.DISABLED)
@@ -248,15 +247,15 @@ class ChatGUI:
         # Tampilkan pesan system
         self.display_system_message("Chat telah dibersihkan. Memulai percakapan baru!")
     
+    # Menampilkan pesan system
     def display_system_message(self, message):
-        """Menampilkan pesan system"""
         self.chat_display.config(state=tk.NORMAL)
         self.chat_display.insert(tk.END, f"System: {message}\n\n", 'system')
         self.chat_display.config(state=tk.DISABLED)
         self.chat_display.see(tk.END)
     
+    # Export chat history
     def export_chat(self):
-        """Export chat history"""
         try:
             filename = self.chat_manager.export_chat('txt')
             if filename:
@@ -264,8 +263,8 @@ class ChatGUI:
         except Exception as e:
             messagebox.showerror("Error", f"Gagal mengexport chat: {str(e)}")
     
+    # Update statistics sidebar
     def update_stats(self):
-        """Update statistics sidebar"""
         history = self.chat_manager.get_chat_history()
         total_messages = len(history)
         
