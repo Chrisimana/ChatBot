@@ -143,21 +143,6 @@ python main.py
 
 ## 📚 Dokumentasi
 
-### Workflow Diagram
-
-```mermaid
-graph TD
-    A[User Input] --> B{GUI Interface}
-    B --> C[Chatbot Core]
-    C --> D{Process Message}
-    D --> E[Feature Detection]
-    E --> F[Generate Response]
-    F --> G[Chat Manager]
-    G --> H[Save to History]
-    H --> I[Update GUI]
-    I --> J[Display Response]
-```
-
 ### File Descriptions
 
 | File | Description |
